@@ -93,21 +93,22 @@ h3{
 }
 
 h4{
-    font-size: 20px;
-    color: #0000;
+    font-size: 30px;
+    background: #0000;
     margin: 30px 0;
 }
 
 .buy-now{
-    width: 140px;
+    width: 180px;
     border: none;
-    padding: 12px 10px;
+    padding: 20px 15px;
     outline: none;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(192,0,255,1) 0%, rgba(230,41,83,1) 100%);
     z-index:2;
+    font-size: 15px;
 }
 .column-2{
     display: flex;
@@ -139,9 +140,9 @@ h4{
 }
 
 .add-car img {
-    height: 45px;
-    width: 45px;
-    
+    height: 100%;
+    width: 100%;
+    max-width: 55px;
 }
 
 .social-media{
@@ -151,7 +152,50 @@ h4{
 }
 
 .social-media img {
-    height: 20px;
+    height: 25px;
     margin: 20px;
     cursor: pointer;
 }
+
+.menu-icon{
+    width: 25px;
+    margin-left: 15px;
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        overflow-y: auto;
+       
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .column-2{
+        margin-bottom: 30px;
+    }
+
+    .color-box{
+        transform: translateX(70px);
+    }
+
+
+   #menu-list{
+       position: relative;
+       top: 60px;
+       left: 60px;
+       overflow: hidden;
+   }
+   .menu-icon{
+       display: block;
+   }
+   .nav-li{
+       display: block;
+       margin-top: 5px;
+   }
+
+} 
+   
